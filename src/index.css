@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes pulse { 0%,100%{transform:scale(1)}50%{transform:scale(1.05)} }
+@keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-10px)} }
+
+
+html { scroll-behavior: smooth; }
+
+
+/* dark defaults */
+:root { --bg: #0f172a; }
+.dark :root { --bg: #0b1220; }
