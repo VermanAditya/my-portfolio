@@ -6,7 +6,18 @@
     "moduleResolution": "Node",
     "strict": true,
     "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
     "types": ["vite/client"]
   },
-  "exclude": ["node_modules", "dist", "**/__tests__/*"]
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.*",
+    "**/__tests__/**",
+    "jest.config.*",
+    "setupTests.*"
+  ]
 }

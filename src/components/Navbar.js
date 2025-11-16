@@ -1,0 +1,5 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { PROFILE } from "../config";
+export const Navbar = ({ theme, setTheme, }) => {
+    return (_jsxs("nav", { className: "w-full px-6 py-4 flex justify-between items-center shadow bg-white dark:bg-gray-800 dark:text-white fixed top-0 z-50", children: [_jsx("h1", { className: "text-xl font-bold", children: PROFILE.name }), _jsxs("div", { className: "flex gap-6 items-center", children: [_jsx("a", { href: "#skills", className: "hover:text-blue-500", children: "Skills" }), _jsx("a", { href: "#projects", className: "hover:text-blue-500", children: "Projects" }), _jsx("a", { href: "#experience", className: "hover:text-blue-500", children: "Experience" }), _jsx("a", { href: "#blogs", className: "hover:text-blue-500", children: "Blogs" }), _jsx("a", { href: "#contact", className: "hover:text-blue-500", children: "Contact" }), _jsx("button", { onClick: () => setTheme(theme === "light" ? "dark" : "light"), className: "px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-lg", children: theme === "light" ? "🌙" : "☀️" })] })] }));
+};
