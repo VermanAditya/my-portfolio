@@ -1,15 +1,12 @@
 {
-"compilerOptions": {
-"target": "ES2022",
-"lib": ["DOM", "ES2022"],
-"module": "ESNext",
-"moduleResolution": "bundler",
-"jsx": "react-jsx",
-"strict": true,
-"esModuleInterop": true,
-"skipLibCheck": true,
-"forceConsistentCasingInFileNames": true,
-"types": ["vite/client"]
-},
-"include": ["src"]
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "react-jsx",
+    "types": ["vite/client"]
+  },
+  "exclude": ["node_modules", "dist", "**/__tests__/*"]
 }
